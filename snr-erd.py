@@ -1,6 +1,7 @@
 from tkinter import Tk, Label
 from time import sleep
 from subprocess import run, PIPE, STDOUT
+from conf.snr import snr_cfg
 
 # temperature display parameters
 temp_warning = 20
@@ -29,8 +30,8 @@ show_temp.pack()
 
 # device
 class snr_erd():
-  ip = 'SNR_IP'
-  pwd = 'SNR_PASSWORD'
+  ip = snr_cfg.ip
+  pwd = snr_cfg.pwd
 
   @classmethod
   def get_info(self, oid):
