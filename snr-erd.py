@@ -29,8 +29,8 @@ show_temp.pack()
 
 # device
 class snr_erd():
-  ip = '10.45.119.70'
-  pwd = '12345qW'
+  ip = 'SNR_IP'
+  pwd = 'SNR_PASSWORD'
 
   @classmethod
   def get_info(self, oid):
